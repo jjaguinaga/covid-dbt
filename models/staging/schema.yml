@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_texas_covid_2021
+    description: 'Staged CDC data for Texas COVID conditions 2021'
+
+    columns: 
+      - name: condition
+        tests:
+          - not_null
+      - name: age_group
+        tests:
+          - not_null
+      - name: covid_19_deaths
+        tests:
+          - not_null
